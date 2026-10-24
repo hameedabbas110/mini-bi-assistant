@@ -1,0 +1,14 @@
+venv/
+frontend/node_modules/
+frontend/dist/
+__pycache__/
+.pytest_cache/
+.env
+*.pyc
+
+*.db
+*.sqlite
+*.sqlite3
+
+
+.env

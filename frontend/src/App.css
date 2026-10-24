@@ -1,0 +1,193 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  background: #f4f7fb;
+  color: #172033;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 22px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 15px;
+  background: #2459d3;
+  color: white;
+  font-weight: 800;
+  font-size: 22px;
+}
+
+h1 {
+  font-size: 25px;
+  margin: 0 0 7px;
+}
+
+h2 {
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.header p,
+.muted {
+  color: #68748a;
+  margin: 0;
+}
+
+.panel {
+  background: white;
+  border: 1px solid #e1e7f0;
+  border-radius: 16px;
+  padding: 26px;
+  margin-bottom: 22px;
+  box-shadow: 0 5px 20px #1c31520a;
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+.question-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.question-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid #cdd6e4;
+  border-radius: 9px;
+  outline-color: #2459d3;
+}
+
+.question-form button {
+  background: #2459d3;
+  color: white;
+  border: 0;
+  border-radius: 9px;
+  padding: 0 25px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.example {
+  background: #f4f7fc;
+  border: 1px solid #dce4f0;
+  color: #34445f;
+  padding: 10px 12px;
+  border-radius: 9px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.example:hover {
+  border-color: #2459d3;
+  color: #2459d3;
+}
+
+.error {
+  padding: 15px;
+  background: #fff0f0;
+  color: #a12626;
+  border: 1px solid #ffd1d1;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.eyebrow,
+.source {
+  color: #68748a;
+  font-size: 12px;
+}
+
+.results table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.results th,
+.results td {
+  text-align: left;
+  padding: 13px;
+  border-bottom: 1px solid #e6ebf2;
+  overflow-wrap: anywhere;
+}
+
+.results th {
+  text-transform: capitalize;
+  color: #526079;
+}
+
+footer {
+  text-align: center;
+  color: #7a8598;
+  font-size: 13px;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 22px 14px;
+  }
+
+  h1 {
+    font-size: 19px;
+  }
+
+  .panel {
+    padding: 18px;
+  }
+
+  .question-form {
+    flex-direction: column;
+  }
+
+  .question-form button {
+    padding: 13px;
+  }
+}
